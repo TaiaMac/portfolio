@@ -1,0 +1,118 @@
+/* Colors */
+:root {
+  --primary-color: #fc81ebff;
+  --text-color: #050505ff;
+  --border-color: #090808ff;
+  --background-color: #FFFFFF;
+  --secondary-bg: #F5F5F5;
+  --accent-color: #f0acc3ff;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  background-color: #333333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* Sections */
+.content-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%; /* makes it fit inside container */
+  height: auto;    /* keeps correct proportions */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 170px;
+  border-radius: 50%; /* makes it round */
+  border: 3px solid #000000; /* matches your primary color */
+.project-card img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #0000004d;
+}
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+}
+
