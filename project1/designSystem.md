@@ -6,12 +6,12 @@ This documentation provides a clear and simplified overview of the design system
 
 ## 1. Color Palette  
 
-- Primary Color: `#fc81ebff`  
-- Text Color: `#050505ff`  
-- Border Color: `#090808ff`  
-- Background Color: `#FFFFFF`  
-- Secondary Background Color: `#F5F5F5`  
-- Accent Color: `#f0acc3ff`  
+- primary-color: rgb(16, 6, 15);
+- text-color: #050505ff;
+- border-color: #090808ff;
+- background-color: #FFFFFF;
+- secondary-bg: #F5F5F5;
+- accent-color: #f0acc3ff;
 
 ## 2. Typography  
 
@@ -24,17 +24,23 @@ This documentation provides a clear and simplified overview of the design system
 ### Header  
 - Background: Secondary background (#F5F5F5)  
 - Title: Large serif font, centered  
-- Subtitle: Bold tagline under title    
+- Subtitle: Bold tagline under title
+![Header Mock-up](Header.png)
+
 
 ### Navigation  
 - Background: Dark grey (#333333)  
-- Links: White text, bold  
-- Hover effect: Accent underline (#f0acc3ff)  
+- Links: White text, bold,
+- Hover effect: Accent underline (#f0acc3ff)
+![Navigation Mock-up](Navigation.png)
+
 
 ### About Section
 - Layout: Profile picture + about text side by side  
 - Profile picture: Circle (150x170px), black border  
 - Text: Simple paragraph with heading  
+![Section Mock-up](Section.png)
+
 
 ### Project Cards
 - Layout: Image + Title + Description  
@@ -43,8 +49,7 @@ This documentation provides a clear and simplified overview of the design system
 
 ### Footer
 - Background: Secondary background (#F5F5F5)  
-- Text: Small, centered, light style  
+- Text: Small, centered, light style   
+- Design: Centered text, small font size, light grey (`#F5F5F5`) background
+![Footer Mock-up](Footer.png) 
 
-### Footer  
-- Design: Centered text, small font size, light grey (`#F5F5F5`) background  
-   
