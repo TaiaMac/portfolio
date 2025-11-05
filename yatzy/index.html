@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Yatzy Game</title>
+  <link rel="stylesheet" href="yatzy_dice.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Yatzy</h1>
+      <div class="meta">
+        <span id="roundInfo">Round 1</span>
+        <span id="rollsLeft">Rolls left: 3</span>
+      </div>
+    </header>
+
+    <!-- Overlay message -->
+    <div id="overlayMessage" class="overlay" aria-hidden="true">
+      <div class="overlay-box" id="overlayText"></div>
+    </div>
+
+    <div class="board">
+      <!-- Dice and Controls -->
+      <div class="left">
+        <div id="diceSection" class="dice-container">
+          <div id="die01" class="die" tabindex="0"></div>
+          <div id="die02" class="die" tabindex="0"></div>
+          <div id="die03" class="die" tabindex="0"></div>
+          <div id="die04" class="die" tabindex="0"></div>
+          <div id="die05" class="die" tabindex="0"></div>
+        </div>
+
+        <div class="controls">
+          <button id="roller" class="btn primary">Roll Dice</button>
+          <button id="endTurnBtn" class="btn">End Turn</button>
+          <button id="newGameBtn" class="btn outline">New Game</button>
+        </div>
+
+        <p id="message" class="message">Click "Roll Dice" to start!</p>
+      </div>
+
+      <!-- Scoreboard -->
+      <div class="right">
+        <table class="score-table" id="scoreboard">
+          <tr><th>Category</th><th>Score</th></tr>
+          <tr><td>Ones</td><td id="ones" class="cell"></td></tr>
+          <tr><td>Twos</td><td id="twos" class="cell"></td></tr>
+          <tr><td>Threes</td><td id="threes" class="cell"></td></tr>
+          <tr><td>Fours</td><td id="fours" class="cell"></td></tr>
+          <tr><td>Fives</td><td id="fives" class="cell"></td></tr>
+          <tr><td>Sixes</td><td id="sixes" class="cell"></td></tr>
+          <tr class="subtotal"><td>Subtotal</td><td id="sum" class="cell"></td></tr>
+          <tr class="bonus"><td>Bonus</td><td id="bonus" class="cell"></td></tr>
+          <tr><td>Three of a Kind</td><td id="three_of_a_kind" class="cell"></td></tr>
+          <tr><td>Four of a Kind</td><td id="four_of_a_kind" class="cell"></td></tr>
+          <tr><td>Full House</td><td id="full_house" class="cell"></td></tr>
+          <tr><td>Small Straight</td><td id="small_straight" class="cell"></td></tr>
+          <tr><td>Large Straight</td><td id="large_straight" class="cell"></td></tr>
+          <tr><td>Chance</td><td id="chance" class="cell"></td></tr>
+          <tr><td>Yahtzee</td><td id="yatzy" class="cell"></td></tr>
+          <tr class="grandtotal"><th>Total Score</th><th id="total" class="cell"></th></tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">Developed by Taia Maclaurin-CST3106 Assignment 1</footer>
+  </div>
+
+  <!-- single module entry -->
+  <script type="module" src="yatzyGame.js"></script>
+</body>
+</html>
